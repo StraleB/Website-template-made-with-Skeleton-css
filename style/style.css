@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background:rgb(226, 226, 226);
+    height: 4em;
+}
+
+nav ul{
+    padding-top:0.6em;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 0em 0.5em;
+    font-size: 1.6em;
+    color: rgb(56, 56, 56);
+}
+
+.nav-link:hover{
+    color:rgb(121, 121, 121);
+}
