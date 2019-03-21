@@ -7,7 +7,7 @@
 
 /* Navbar customization*/
 nav{
-    background:#aef5fa;
+    background:hsl(180, 2%, 88%);
     height: 4em;
 }
 
@@ -32,7 +32,7 @@ ul li {
 }
 
 .nav-link:hover{
-    color:rgb(121, 121, 121);
+    color:hsl(187, 69%, 43%);
 }
 
 /*Content and container customization*/
@@ -89,4 +89,19 @@ ul li {
     font-size: 4em;
     color: rgb(40, 41, 41);
     padding-bottom: 0.3em;
+}
+
+/*Working Time section*/
+
+.workTime{
+    margin:2em 0;
+    text-align: center;
+}
+
+.workTime li{
+    list-style: none;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 2.3rem;
 }
