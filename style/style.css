@@ -2,8 +2,13 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    background:rgb(223, 222, 222);
+}
+
 nav{
-    background:rgb(226, 226, 226);
+    background:#aef5fa;
     height: 4em;
 }
 
@@ -25,4 +30,25 @@ ul li {
 
 .nav-link:hover{
     color:rgb(121, 121, 121);
+}
+
+.container{
+    background: white;
+}
+
+.icons{
+    float:right;
+    margin:-7em 10em;
+}
+
+ .fa-mobile{
+     font-size: 8rem;
+ }
+
+ .fa-tablet{
+    font-size: 11rem;
+}
+
+.fa-desktop{
+    font-size: 14rem;
 }
