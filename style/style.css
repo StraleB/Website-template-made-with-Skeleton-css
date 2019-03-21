@@ -3,13 +3,16 @@
     margin: 0;
 }
 
-body{
-    background:rgb(223, 222, 222);
-}
 
+
+/* Navbar customization*/
 nav{
     background:#aef5fa;
     height: 4em;
+}
+
+nav .fas{
+    font-size: 0.8em; 
 }
 
 nav ul{
@@ -32,13 +35,24 @@ ul li {
     color:rgb(121, 121, 121);
 }
 
-.container{
-    background: white;
+/*Content and container customization*/
+
+.appInfo{
+    margin: 2% 26%;
+    height: 37em;
 }
 
-.icons{
+.appInfo p{
+    font-size: 1.3em;
+}
+
+.button-primary{
+    font-size: 2rem;
+}
+
+.one-half{
     float:right;
-    margin:-7em 10em;
+    margin:-10% -15%;
 }
 
  .fa-mobile{
@@ -51,4 +65,28 @@ ul li {
 
 .fa-desktop{
     font-size: 14rem;
+}
+
+/*Offers*/
+
+.offers{
+    background:rgb(0, 153, 255);
+    text-align: center;
+    height: 30em;
+}
+
+.offers li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    padding-right:1.4em;
+    margin: 7em auto;
+}
+
+.offers i{
+    font-size: 4em;
+    color: rgb(40, 41, 41);
+    padding-bottom: 0.3em;
 }
