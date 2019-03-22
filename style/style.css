@@ -1,159 +1,272 @@
-*{
-    padding: 0;
-    margin: 0;
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    
+    /* Navbar customization*/
+    nav{
+        background:hsl(180, 2%, 88%);
+        height: 4em;
+    }
+    
+    nav .fas{
+        font-size: 0.8em; 
+    }
+    
+    nav ul{
+        padding-top:0.6em;
+    }
+    
+    ul li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .nav-link{
+        text-decoration: none;
+        padding: 0em 0.5em;
+        font-size: 1.6em;
+        color: rgb(56, 56, 56);
+    }
+    
+    .nav-link:hover{
+        color:hsl(187, 69%, 43%);
+    }
+    
+    
+    /*Content and container customization*/
+    
+    .appInfo{
+        margin: 2% 26%;
+        height: 37em;
+    }
+    
+    .appInfo p{
+        font-size: 1.3em;
+    }
+    
+    .button-primary{
+        font-size: 2rem;
+    }
+    
+    .one-half{
+        float:right;
+        margin:-10% -15%;
+    }
+    
+     .fa-mobile{
+         font-size: 8rem;
+     }
+    
+     .fa-tablet{
+        font-size: 11rem;
+    }
+    
+    .fa-desktop{
+        font-size: 14rem;
+    }
+    
+    /*Offers*/
+    
+    .offers{
+        background:rgb(0, 153, 255);
+        text-align: center;
+        height: 30em;
+    }
+    
+    .offers li{
+        display: inline-block;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        padding-right:1.4em;
+        margin: 7em auto;
+    }
+    
+    .offers i{
+        font-size: 4em;
+        color: rgb(40, 41, 41);
+        padding-bottom: 0.3em;
+    }
+    
+    /*Working Time section*/
+    
+    .workTime{
+        margin:2em 0;
+        text-align: center;
+    }
+    
+    .workTime li{
+        list-style: none;
+        display: inline-block;
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 2.3rem;
+    }
+    
+    /*Impressions section*/
+    
+    .impressions{
+        background:rgb(0, 140, 255);
+        height: 40em;
+        text-align: center;
+    }
+    
+    
+    
+    .impressions article{
+        background:rgb(235, 235, 235);
+        width:30em;
+        border-radius:9px;
+        text-align: center;
+        box-shadow: 2px 12px 22px 2px hsla(0, 1%, 28%, 0.808);
+        display: inline-block;
+        margin: 2em 1.5em;
+    }
+    
+    .avatar{
+        font-size: 4rem;
+    }
+    
+    .impressions i{
+        font-size: 1.5rem;
+        color:rgb(0, 140, 255);
+        cursor: pointer;
+    }
+    
+    
+    .impressions article h6{
+    font-size: 2em;
+    }
+    
+    .impressions article p{
+        font-size: 2rem;
+    }
+    
+    
+    .impressions button:hover {
+        background: rgb(0, 140, 255);
+        color: white;
+    }
+    
+    .impressions button:hover i {
+        color: white;
+    }
+    
+    .impressions .fa-user-astronaut{
+        font-size: 5rem;
+    }
+    
+    
+    .impressions .fa-user-ninja{
+        font-size: 5rem;
+    } 
+    
+    .impressions .fa-user-tie{
+        font-size: 5rem;
+    }
+    
+    .footer{
+        height: 4em;
+        background:#3f3f3f;
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .footer a{
+        color: white;
+        text-decoration: none;
+    
+    }
+    
+    .footer a:hover{
+        color: aqua;
+    }
+    
+    .footer p{
+        float: right;
+        cursor: pointer;
+        padding-right:2rem;
+    }
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .appInfo{
+        margin: 2% 2%;
+        height: 37em;
+        width: 100%;
+    }
+    
+    .appInfo p{
+        font-size: 1.2em;
+    }
+    
+    .button-primary{
+        font-size: 1.5rem;
+    }
+
+    .fa-mobile{
+        font-size: 5rem;
+    }
+   
+    .fa-tablet{
+       font-size: 7rem;
+   }
+   
+   .fa-desktop{
+       font-size: 9rem;
+   }
+
+   .one-half{
+    margin:7% -15%;
 }
 
+/*offers*/
 
-
-/* Navbar customization*/
-nav{
-    background:hsl(180, 2%, 88%);
-    height: 4em;
-}
-
-nav .fas{
-    font-size: 0.8em; 
-}
-
-nav ul{
-    padding-top:0.6em;
-}
-
-ul li {
-    list-style: none;
-    display: inline;
-}
-
-.nav-link{
-    text-decoration: none;
-    padding: 0em 0.5em;
-    font-size: 1.6em;
-    color: rgb(56, 56, 56);
-}
-
-.nav-link:hover{
-    color:hsl(187, 69%, 43%);
-}
-
-/*Content and container customization*/
-
-.appInfo{
-    margin: 2% 26%;
-    height: 37em;
-}
-
-.appInfo p{
-    font-size: 1.3em;
-}
-
-.button-primary{
-    font-size: 2rem;
-}
-
-.one-half{
-    float:right;
-    margin:-10% -15%;
-}
-
- .fa-mobile{
-     font-size: 8rem;
- }
-
- .fa-tablet{
-    font-size: 11rem;
-}
-
-.fa-desktop{
-    font-size: 14rem;
-}
-
-/*Offers*/
-
-.offers{
-    background:rgb(0, 153, 255);
-    text-align: center;
-    height: 30em;
+.offers{   
+     height: 70em;
 }
 
 .offers li{
-    display: inline-block;
-    list-style: none;
-    font-size: 1.2em;
-    text-align: center;
-    color: white;
-    padding-right:1.4em;
-    margin: 7em auto;
+   margin: 3em auto;
 }
 
 .offers i{
-    font-size: 4em;
-    color: rgb(40, 41, 41);
-    padding-bottom: 0.3em;
-}
-
-/*Working Time section*/
-
-.workTime{
-    margin:2em 0;
-    text-align: center;
-}
-
-.workTime li{
-    list-style: none;
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
-    margin-right: 2.3rem;
+    font-size: 3em;
 }
 
 /*Impressions section*/
 
 .impressions{
-    background:rgb(0, 140, 255);
-    height: 40em;
-    text-align: center;
+    height: 56em;
 }
-
 
 
 .impressions article{
-    background:rgb(235, 235, 235);
-    width:30em;
-    border-radius:9px;
-    text-align: center;
-    box-shadow: 2px 12px 22px 2px hsla(0, 1%, 28%, 0.808);
-    display: inline-block;
-    margin: 2em 1.5em;
+    width:20em;
+    margin: 1em 1.5em;
 }
 
-.avatar{
-    font-size: 4rem;
-}
 
 .impressions i{
-    font-size: 1.5rem;
-    color:rgb(0, 140, 255);
-    cursor: pointer;
+    font-size: 1.3rem;
 }
 
 
 .impressions article h6{
-font-size: 2em;
+font-size: 1.5em;
 }
 
 .impressions article p{
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
-
-.impressions button:hover {
-    background: rgb(0, 140, 255);
-    color: white;
-}
-
-.impressions button:hover i {
-    color: white;
-}
 
 .impressions .fa-user-astronaut{
     font-size: 5rem;
@@ -168,25 +281,146 @@ font-size: 2em;
     font-size: 5rem;
 }
 
-.footer{
-    height: 4em;
-    background:#3f3f3f;
-    font-size: 2rem;
-    color: white;
-}
-
-.footer a{
-    color: white;
-    text-decoration: none;
 
 }
 
-.footer a:hover{
-    color: aqua;
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .appInfo{
+        margin: 2% 2%;
+        height: 37em;
+        width: 85%;
+    }
+
+    .impressions article{
+        width:25em;
+        margin: 1em 1.5em;
+    }
 }
 
-.footer p{
-    float: right;
-    cursor: pointer;
-    padding-right:2rem;
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+    .offers{
+ height: 70em;
+    }
+    
+    .offers li{
+        padding-right:4em;
+        margin: 2em auto;
+    }
+    
+    .offers i{
+        font-size: 4em;
+        color: rgb(40, 41, 41);
+        padding-bottom: 0.3em;
+    }
+
+/*impressions*/
+    .impressions i{
+        font-size: 1.6rem;
+    }
+    
+    
+    .impressions article h6{
+    font-size: 1.9em;
+    }
+    
+    .impressions article p{
+        font-size: 1.8rem;
+    }
+    
+    
+    .impressions .fa-user-astronaut{
+        font-size: 5rem;
+    }
+    
+    
+    .impressions .fa-user-ninja{
+        font-size: 5rem;
+    } 
+    
+    .impressions .fa-user-tie{
+        font-size: 5rem;
+    }
+
+    .impressions{
+        height: 62em;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .one-half{
+        margin:-7% -15%;
+    }
+
+
+    .offers{
+        height: 60em;
+           }
+           
+           .offers li{
+               padding-right:9em;
+               margin: 2em 30%;
+               width: 20em;
+           }
+           
+           .offers i{
+               font-size: 4em;
+               color: rgb(40, 41, 41);
+               padding-bottom: 0.3em;
+           }
+
+           .impressions{
+            height: 45em;
+        }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .appInfo{
+        margin: 2% 14%;
+        height: 37em;
+    }
+
+    .one-half{
+        margin:-7% -5%;
+    }
+
+    .fa-mobile{
+        font-size: 8rem;
+    }
+   
+    .fa-tablet{
+       font-size: 11rem;
+   }
+   
+   .fa-desktop{
+       font-size: 14rem;
+   }
+
+   .offers{
+    background:rgb(0, 153, 255);
+    text-align: center;
+    height: 30em;
+}
+
+.offers li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2em;
+    padding-right:1.4em;
+    margin: 7em auto;
+}
+
+.offers i{
+    font-size: 4em;
+    padding-bottom: 0.3em;
+}
+
+.impressions article {
+width: 30em;
+}
+
 }
