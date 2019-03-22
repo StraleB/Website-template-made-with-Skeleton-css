@@ -117,11 +117,11 @@ ul li {
 
 
 .impressions article{
-    background:#e6e6e6;
+    background:rgb(235, 235, 235);
     width:30em;
     border-radius:9px;
     text-align: center;
-    box-shadow: 2px 12px 22px 2px #00000065;
+    box-shadow: 2px 12px 22px 2px hsla(0, 1%, 28%, 0.808);
     display: inline-block;
     margin: 2em 1.5em;
 }
@@ -166,4 +166,27 @@ font-size: 2em;
 
 .impressions .fa-user-tie{
     font-size: 5rem;
+}
+
+.footer{
+    height: 4em;
+    background:#3f3f3f;
+    font-size: 2rem;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer a:hover{
+    color: aqua;
+}
+
+.footer p{
+    float: right;
+    cursor: pointer;
+    padding-right:2rem;
 }
