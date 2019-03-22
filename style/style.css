@@ -105,3 +105,65 @@ ul li {
     text-align: center;
     margin-right: 2.3rem;
 }
+
+/*Impressions section*/
+
+.impressions{
+    background:rgb(0, 140, 255);
+    height: 40em;
+    text-align: center;
+}
+
+
+
+.impressions article{
+    background:#e6e6e6;
+    width:30em;
+    border-radius:9px;
+    text-align: center;
+    box-shadow: 2px 12px 22px 2px #00000065;
+    display: inline-block;
+    margin: 2em 1.5em;
+}
+
+.avatar{
+    font-size: 4rem;
+}
+
+.impressions i{
+    font-size: 1.5rem;
+    color:rgb(0, 140, 255);
+    cursor: pointer;
+}
+
+
+.impressions article h6{
+font-size: 2em;
+}
+
+.impressions article p{
+    font-size: 2rem;
+}
+
+
+.impressions button:hover {
+    background: rgb(0, 140, 255);
+    color: white;
+}
+
+.impressions button:hover i {
+    color: white;
+}
+
+.impressions .fa-user-astronaut{
+    font-size: 5rem;
+}
+
+
+.impressions .fa-user-ninja{
+    font-size: 5rem;
+} 
+
+.impressions .fa-user-tie{
+    font-size: 5rem;
+}
