@@ -92,7 +92,20 @@ const homeState = function(page){
 
 const contactState = function(page){
     document.querySelector('.content').innerHTML=`
-     
+    <div class="form-container">
+    <h1 align="center">Contact us here</h1>
+    <form>
+    <label for="name">Name</label>
+       <input id="name" type="text" name="Name">
+  
+       <label for="email">Email</label>
+    <input id="email" type="email" name="Email">
+  
+    <label for="message">Message</label>
+    <textarea id="message" name="Message"></textarea>
+  <input class="button-primary" type="submit" value="Submit" />
+  </form>
+  </div>
     `;
 }
 
@@ -109,12 +122,14 @@ const contact = document.getElementById('contactUs');
 
 home.addEventListener('click', (e) =>{
     page.change(new homeState);
-
+ 
     e.preventDefault();
 });
 
+const footer = document.querySelector('.footer');
+
 contact.addEventListener('click', (e) => {
     page.change(new contactState);
-
+     footer.style.marginTop= "6.9em";
     e.preventDefault();
 });
