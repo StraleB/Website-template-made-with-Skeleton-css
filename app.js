@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Skeleton Page</title>
-</head>
-<body>
-    <nav>
-        <ul>
-     <li style="padding:0 5px 0 10px; border-right: solid;"><strong>Lorem Ipsum</strong></li>       
-    <li> <a id="home" class="nav-link" href="#"><i class="fas fa-home"></i> Home</a></li>
-    <li> <a id="contactUs" class="nav-link" href="#"><i class="fas fa-book-reader"></i> Contact us</a></li>
-        </ul>
-</nav>
+const pageState = function(){
+    let currentState = new homeState(this);
 
-<!--
- <div class="row">
+    this.init = function(){
+        this.change(new homeState);
+    }
+
+    this.change = function(state){
+        currentState = state;
+    }
+}
+
+const homeState = function(page){
+    document.querySelector('.content').innerHTML =`
+    <div class="row">
         <article class="appInfo">
             <h2>Lorem ipsum</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> 
@@ -91,20 +84,37 @@
                 <button class="dislike"><i class="fas fa-thumbs-down"></i> downvote</button>
               </article>
     </div>
-</div>
-
--->
-
-<div class="content">
-
     
-</div>
+    `;
+}
 
-    <footer class="footer"> &copy;2019  
-   <a href="">StraleB</a>
-   <p>Privacy Policy</p>
+//Contact state
 
-    </footer>
-</body>
-<script src="app.js"></script>
-</html>
+const contactState = function(page){
+    document.querySelector('.content').innerHTML=`
+     
+    `;
+}
+
+//Instantiate page state
+
+
+const page = new pageState();
+
+// Init the first state
+page.init();
+
+const home = document.getElementById('home');
+const contact = document.getElementById('contactUs');
+
+home.addEventListener('click', (e) =>{
+    page.change(new homeState);
+
+    e.preventDefault();
+});
+
+contact.addEventListener('click', (e) => {
+    page.change(new contactState);
+
+    e.preventDefault();
+});
